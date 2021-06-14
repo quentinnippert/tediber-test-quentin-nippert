@@ -3,7 +3,7 @@
     <div class="element-container">
       <div class="element-title">
         <p class="element-text">FOIRE AUX QUESTION TEDIBER</p>
-        <a @click="toggleFAQ()"><fa-icon icon="chevron-down" size="2x" /></a>
+        <a @click="toggleFAQ()"><fa-icon icon="chevron-down" size="2x" v-bind:class="{ toggle: faqVisible }" /></a>
       </div>
       <p v-if="faqVisible" class="response-text">
         Découvrez toute notre FAQ en cliquant ici :
@@ -14,7 +14,7 @@
       <div class="element-title">
         <p class="element-text">LA GARANTIE TEDIBER</p>
         <a @click="toggleGarantee()"
-          ><fa-icon icon="chevron-down" size="2x"
+          ><fa-icon icon="chevron-down" size="2x" v-bind:class="{ toggle: garanteeVisible }"
         /></a>
       </div>
       <p v-if="garanteeVisible" class="response-text">
@@ -38,7 +38,7 @@
       <div class="element-title">
         <p class="element-text">REPRISE DE L'ANCIENNE LITERIE</p>
         <a @click="toggleOldBedding()"
-          ><fa-icon icon="chevron-down" size="2x"
+          ><fa-icon icon="chevron-down" size="2x" v-bind:class="{ toggle: oldBedding }"
         /></a>
       </div>
       <p v-if="oldBedding" class="response-text">
@@ -56,7 +56,7 @@
     <div class="element-container">
       <div class="element-title">
         <p class="element-text">COMMENT FAIRE UN RETOUR ?</p>
-        <a @click="toggleReturn"><fa-icon icon="chevron-down" size="2x" /></a>
+        <a @click="toggleReturn"><fa-icon icon="chevron-down" size="2x" v-bind:class="{ toggle: returnVisible }" /></a>
       </div>
       <p v-if="returnVisible" class="response-text">
         Imaginons que je décide de ne pas garder mon Tediber ? Cela nous
@@ -152,4 +152,9 @@ a {
 .response-text {
     text-align: start;
 }
+
+.toggle {
+  transform: rotate(180deg);
+}
+
 </style>

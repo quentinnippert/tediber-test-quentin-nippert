@@ -279,7 +279,7 @@ export default {
 
 hr.solid {
   border-top: 1px solid #202447;
-  width: 100%;
+  width: 40%;
   height: 1px;
   display: inline-block;
   vertical-align: middle;
@@ -297,6 +297,7 @@ hr.solid-details {
   font-size: 1.5rem;
   z-index: 1;
   margin: 0px 20px;
+  width: 50%;
 }
 
 .zigzag {
@@ -334,6 +335,12 @@ hr.solid-details {
   }
   .order-right-container {
     width: 100%;
+  }
+  .order-title {
+    width: 80%;
+  }
+  .solid {
+    width: 10%;
   }
 }
 
@@ -482,4 +489,11 @@ hr.solid-details {
 .yellow-divider-container {
   margin-top: 2%;
 }
+.article-number,
+.product-title {
+  font-size: 1.2rem;
+}
+
+
+
 </style>
