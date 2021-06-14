@@ -7,7 +7,7 @@
       <hr class="solid" />
     </div>
     <div class="yellow-divider-container">
-      <img class="zigzag" src="zigzag copy 2.svg" />
+      <img class="zigzag" src="zigzag copy 2.svg" alt="tediber litterie française divider"/>
     </div>
     <div class="order-details-container">
       <div class="order-left-container">
@@ -51,7 +51,7 @@
 
           <div class="shipping-pics-container" v-if="trackingVisible">
             <div class="shipping-pics">
-              <img class="picture-shipping1" src="Group.svg" />
+              <img class="picture-shipping1" src="Group.svg" alt="tediber litterie française préparation commande"/>
               <div class="square">
                 <fa-icon
                   icon="check"
@@ -66,9 +66,9 @@
                 />
               </div>
             </div>
-            <img class="arrow" src="arrow.png" />
+            <img class="arrow" src="arrow.png" alt="tediber litterie française suivi colis"/>
             <div class="shipping-pics">
-              <img class="picture-shipping2" src="Group 2.svg" />
+              <img class="picture-shipping2" src="Group 2.svg" alt="tediber litterie française expédition colis" />
               <div class="square">
                 <fa-icon
                   icon="check"
@@ -82,9 +82,9 @@
                 />
               </div>
             </div>
-            <img class="arrow" src="arrow.png" />
+            <img class="arrow" src="arrow.png" alt="tediber litterie française suivi colis"/>
             <div class="shipping-pics">
-              <img class="picture-shipping2" src="Group 3.svg" />
+              <img class="picture-shipping2" src="Group 3.svg" alt="tediber litterie française livraison colis" />
               <div class="square">
                 <fa-icon
                   icon="check"
@@ -96,9 +96,9 @@
                 />
               </div>
             </div>
-            <img class="arrow" src="arrow.png" />
+            <img class="arrow" src="arrow.png" alt="tediber litterie française suivi colis"/>
             <div class="shipping-pics">
-              <img class="picture-shipping3" src="Group 4.svg" />
+              <img class="picture-shipping3" src="Group 4.svg" alt="tediber litterie française réception colis"/>
               <div class="square">
                 <fa-icon
                   icon="check"
@@ -144,7 +144,7 @@
           v-bind:index="index"
           v-bind:key="product.id"
         >
-          <img class="product-img" v-bind:src="product.img" />
+          <img class="product-img" v-bind:src="product.img" alt="`tediber litterie française {{product.name}}`"/>
           <div class="product-details">
             <p class="product-title">{{ product.name }}</p>
             <p class="product-title">{{ product.subTotal }} €</p>
@@ -162,7 +162,7 @@
       <hr class="solid" />
     </div>
     <div class="yellow-divider-container">
-      <img class="zigzag" src="zigzag copy 2.svg" />
+      <img class="zigzag" src="zigzag copy 2.svg" alt="tediber litterie française divider"/>
     </div>
     <ShippingInfo :order="order" :client="client" />
     <div class="title-container">
@@ -171,7 +171,7 @@
       <hr class="solid" />
     </div>
     <div class="yellow-divider-container">
-      <img class="zigzag" src="zigzag copy 2.svg" />
+      <img class="zigzag" src="zigzag copy 2.svg" alt="tediber litterie française divider"/>
     </div>
 
     <PaymentInfo :order="order" />
@@ -182,7 +182,7 @@
       <hr class="solid" />
     </div>
     <div class="yellow-divider-container">
-      <img class="zigzag" src="zigzag copy 2.svg" />
+      <img class="zigzag" src="zigzag copy 2.svg" alt="tediber litterie française divider"/>
     </div>
 
     <OrderTotal :order="order" />
@@ -193,7 +193,7 @@
       <hr class="solid" />
     </div>
     <div class="yellow-divider-container">
-      <img class="zigzag" src="zigzag copy 2.svg" />
+      <img class="zigzag" src="zigzag copy 2.svg" alt="tediber litterie française divider"/>
     </div>
     <Informations />
   </div>
