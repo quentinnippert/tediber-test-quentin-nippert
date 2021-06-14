@@ -1,4 +1,4 @@
 module.exports = {
-    mongoUri: "mongodb+srv://adminqn:adminqndatabase@cluster0.guorc.mongodb.net/Tediber?retryWrites=true&w=majority",
+    mongoUri: process.env.MONGO_URI,
     PORT: process.env.PORT || 3000,
 };

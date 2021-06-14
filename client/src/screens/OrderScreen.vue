@@ -234,7 +234,7 @@ export default {
   },
   async mounted() {
     Vue.axios
-      .get(`http://localhost:3000/order?id=60c5be04ae9e8abafabc3985`)
+      .get(`/order?id=60c5be04ae9e8abafabc3985`)
       .then((resp) => {
         this.order = JSON.parse(JSON.stringify(resp.data));
         this.order_articles = JSON.parse(
